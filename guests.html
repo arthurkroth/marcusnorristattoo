@@ -3,28 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="Stylesheet" href="styles.css">
     <title>Guests</title>
 </head>
 <body>
-    <a href="index.html">back to Index</a>
-    <div class="guestWrapper">
-        <div class="guestBanner">
-            <h1 id="guestTitle">Tour Dates</h1><span>
-            <img id="guestLogo" src="images/logo1.png">
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="flashs.html">Flashs</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="guests.html">Guests</a></li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </nav>
+          
+        <div class="header">
+            <img class="logo" src="images/Marcus Norris Logo.jpg" alt="">
+            <img class="banner" src="images/1572.jpg" alt="">
         </div>
-        <nav class="guestNav">
-                    <a href="flashs.html">Flashs</a>
-                    <a href="appointments.html">Appointments</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="guests.html">Guests</a>
-        </nav><br>
+
         <div class="guestMain">
             <ul>
                 <li class="location">Dublin Tattoo Convention</li><br>
                 <li class="address">RDS Dublin</li><br>
-                <li class="date">29 September - 1st October</li><br>
+                <li class="date">29 September - 1st October</li>
+            </ul>
+            <hr>
+            <ul>
+                <li class="location">The Big London Tattoo Show</li><br>
+                <li class="address">Excel London</li><br>
+                <li class="date">26 August - 27 August</li>
+            </ul>
+            <hr>
+            <ul>
+                <li class="location">New York Tattoo Convention</li><br>
+                <li class="address">Coney Island</li><br>
+                <li class="date">11 July - 14 July</li>
             </ul>
         </div>
+            
+        <div>
+            <footer>
+                <p class="footer">All rights reserved to BLABLABLA</p>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
