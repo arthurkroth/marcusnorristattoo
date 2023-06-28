@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="Stylesheet" href="styles.css">
     <title>Appointments</title>
 </head>
 <body>
-    <a href="index.html">back to Index</a>
-    <div class="appWrapper">
-        <div class="appBanner">
-            <h1 id="appTitle">Bookings</h1>
-            <img id="appLogo" src="images/logo1.png" alt="logo">
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="flashs.html">Flashs</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="guests.html">Guests</a></li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </nav>
+          
+        <div class="header">
+            <img class="logo" src="images/Marcus Norris Logo.jpg" alt="">
+            <img class="banner" src="images/1572.jpg" alt="">
         </div>
 
-        <nav class="appNav">
-            <a href="flashs.html">Flashs</a>
-            <a href="appointments.html">Appointments</a>
-            <a href="contact.html">Contact</a>
-            <a href="guests.html">Guests</a>
-            </nav><br>
-
         <div class="form">
-            <form action="mailto:we will fill this in later" method="post" enctype="text/plain">
+            <form action="mailto:marcusstaygold@gmail.com" method="post" enctype="text/plain">
                     <p class="formText">Name</p>
                     <input type="text" placeholder="Enter your name">
                     <br>
@@ -44,6 +54,17 @@
 
                     <p class="formText">* Required</p>
             </form>
+        </div>
+        <div class="deposit">
+            <span class="deposit-text"><p>Deposits to be paid via</p>
+            <a href="https://www.paypal.com" target="_blank">
+                <img class="paypal" src="images/Paypal.png" alt="PayPal Button" />
+              </a>
+        </div>
+        <div><hr>
+            <footer>
+                <p class="footer">All rights reserved to BLABLABLA</p>
+            </footer>
         </div>
     </div>
 </body>
