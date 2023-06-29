@@ -2,8 +2,21 @@ body{
     background-color: black;
 }
 
-p{
+.col-md{
     color: rgb(199,36,177);
+}
+
+nav, section{
+    background-color: black;
+}
+
+.nav-link{
+    color: rgb(199,36,177);
+}
+
+.logo{
+    height: 75px;
+    width: 75px;
 }
 
 ul{
@@ -14,43 +27,18 @@ li{
     display: inline-block;
 }
 
-.navbar.navbar-dark.bg-dark{
-    background-color: black;
-}
-
-.navbar-dark.bg-dark li a {
-    color: rgb(210, 39, 48);
-  }
-
-.header{
-    height: 600px;
-    width:100%;
-    background-color: Black; 
-}
-
 .form-inline{
     float: right;
     padding-top: 10px;
 }
 
-.logo{
-    width: 10%;
-    margin-bottom: 15%;
-    margin-left: 3%;
-}
-
 .banner{
     height: 600px;
-    width: 80%;
-    margin-left: 100px;
+    width: 100%;
 }
 
 .main{
     background-color: beige;
-}
-
-.wrapper2{
-    display: flex;
 }
 
 .bio{
@@ -70,9 +58,7 @@ li{
 }
 
 footer{
-    text-align: center;
     background-color: blueviolet;
-    height: 70px;
 }
 
 .artist{
@@ -144,7 +130,7 @@ footer{
 
 
 .guestMain{
-    padding-top: 100px;
+    padding-top: 30px;
     text-align: center;
 }
 
