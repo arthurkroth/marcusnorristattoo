@@ -2,55 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Xompatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>WebDev CA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Index</title>
 </head>
-<body>
-    <div class="wrapper">
-        <nav class="navbar navbar-dark bg-dark">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="flashs.html">Flashs</a></li>
-                <li><a href="appointments.html">Appointments</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="guests.html">Guests</a></li>
-            </ul>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-          </nav>
 
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/Final Logo.png" alt="logo" class="logo"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="flashs.html" class="nav-link">Flashs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="appointments.html" class="nav-link">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="guests.html" class="nav-link">Guests</a>
+                    </li>
+                </ul>                                
+            </div>
+        </div>
+    </nav>
+
+    <section>
         <div class="header">
-            <img class="logo" src="images/Marcus Norris Logo.jpg" alt="">
             <img class="banner" src="images/1572.jpg" alt="">
         </div>
-    
-        <div class="wrapper2">
-            <div class="bio">
-                <h1>About Me</h1>
-                <p>Greetings! My name is Marcus Norris, and I have immersed myself in the captivating world of tattooing for nearly a decade now. Over the years, I have had the privilege of running my own bustling studio, honing my skills and sharing my passion with clients. Additionally, I have had the opportunity to work in various other renowned tattoo studios, collaborating with talented artists and absorbing diverse artistic perspectives. Alongside these experiences, I've embarked on exciting guest spots across Ireland and the United Kingdom, allowing me to meet fellow enthusiasts and explore different tattooing communities.</p>
-                <p>Before venturing into the realm of tattooing, I proudly served as a freelance portrait artist. Capturing the essence of individuals through my artwork was a rewarding endeavor, but I yearned for a more immersive and tactile creative outlet. It was then that I stumbled upon the art of tattooing, and a profound sense of connection resonated within me. The ability to transform skin into a living canvas, merging artistic expression with personal narratives, fascinated me beyond measure.</p>
-                <p>From the moment I dipped my needles into vibrant ink, I knew that tattooing would be more than a mere profession for me—it would become an all-encompassing vocation. The rhythmic dance between my hands and the tools, the fusion of technical precision and imaginative flair, ignited a fire within my soul. Every stroke I delicately etched onto a person's skin became an opportunity to create lasting, meaningful art.</p>
-                <p>Throughout my journey, I've continuously sought to refine my craft, drawing inspiration from various art forms and cultural influences. I've delved into the rich history of tattooing, exploring its ancient origins and evolving styles. By blending tradition with contemporary trends, I strive to produce unique and personalized designs that reflect the individuality and aspirations of each client.</p>
-                <p>In this ever-evolving artistic landscape, I am deeply grateful for the unwavering support of my clients, who entrust me with their stories, memories, and visions. Their trust fuels my dedication to consistently exceed expectations and deliver tattoo experiences that are both visually stunning and emotionally resonant.</p>
-                <p>So, whether you're considering your first tattoo or looking to embark on another chapter of body art, I wholeheartedly invite you to join me on this extraordinary creative journey. Together, let us create enduring masterpieces that transcend the boundaries of ink and skin, weaving stories that will be cherished for a lifetime.</p>
-            </div>
-            <div class="bioPic">
-                <h1>The Man Behind The Needle</h1>
-                <img class="artist" src="images/Marcus Norris.jpg" alt="artist's picture">
+    </section>
+
+    <section class="p-5 text-light">
+        <div class="container">
+            <div class="row align-itens-enter justify-content-between">
+                <div class="col-md">
+                    <h1>About Me</h1>
+                    <p>Greetings! My name is Marcus Norris, and I have immersed myself in the captivating world of tattooing for nearly a decade now. Over the years, I have had the privilege of running my own bustling studio, honing my skills and sharing my passion with clients. Additionally, I have had the opportunity to work in various other renowned tattoo studios, collaborating with talented artists and absorbing diverse artistic perspectives. Alongside these experiences, I've embarked on exciting guest spots across Ireland and the United Kingdom, allowing me to meet fellow enthusiasts and explore different tattooing communities.</p>
+                    <p>Before venturing into the realm of tattooing, I proudly served as a freelance portrait artist. Capturing the essence of individuals through my artwork was a rewarding endeavor, but I yearned for a more immersive and tactile creative outlet. It was then that I stumbled upon the art of tattooing, and a profound sense of connection resonated within me. The ability to transform skin into a living canvas, merging artistic expression with personal narratives, fascinated me beyond measure.</p>
+                    <p>From the moment I dipped my needles into vibrant ink, I knew that tattooing would be more than a mere profession for me—it would become an all-encompassing vocation. The rhythmic dance between my hands and the tools, the fusion of technical precision and imaginative flair, ignited a fire within my soul. Every stroke I delicately etched onto a person's skin became an opportunity to create lasting, meaningful art.</p>
+                    <p>Throughout my journey, I've continuously sought to refine my craft, drawing inspiration from various art forms and cultural influences. I've delved into the rich history of tattooing, exploring its ancient origins and evolving styles. By blending tradition with contemporary trends, I strive to produce unique and personalized designs that reflect the individuality and aspirations of each client.</p>
+                    <p>In this ever-evolving artistic landscape, I am deeply grateful for the unwavering support of my clients, who entrust me with their stories, memories, and visions. Their trust fuels my dedication to consistently exceed expectations and deliver tattoo experiences that are both visually stunning and emotionally resonant.</p>
+                    <p>So, whether you're considering your first tattoo or looking to embark on another chapter of body art, I wholeheartedly invite you to join me on this extraordinary creative journey. Together, let us create enduring masterpieces that transcend the boundaries of ink and skin, weaving stories that will be cherished for a lifetime.</p>
+                </div>
+                <div class="col-md">
+                    <h1>The Man Behind The Needle</h1>
+                    <img src="images/Marcus Norris (2).jpg" alt="bio" class="img-fluid">
+                </div>
             </div>
         </div>
-        <div>
-            <footer>
-                <p class="footer">All rights reserved to BLABLABLA</p>
-            </footer>
+    </section>
+
+    <footer class="p-2 text-center position-relative">
+        <div class="container">
+            <p>All rights reserved to BLABLABLA</p>
         </div>
-    </div>
+    </footer>
+
 </body>
+
 </html>
