@@ -51,35 +51,80 @@
     
     <div class="wrapper">
         <div class="form">
-            <form action="mailto:marcusstaygold@gmail.com" method="post" enctype="text/plain">
-                    <p class="formText">Name</p>
-                    <input type="text" placeholder="Enter your name">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputName4" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="inputName4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="74 Dorset Street Lower">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCounty" class="form-label">County</label>
+                  <input type="text" class="form-control" id="inputCounty">
+                </div>
+                <div class="col-md-2">
+                  <label for="inputCode" class="form-label">Eircode</label>
+                  <input type="text" class="form-control" id="inputCode">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Tattoo Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please enter where you want to get the tattoo and the size of the tattoo"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">Upload files of tattoo design</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        <p class="form-check-label">Check my calendar!</p>
+                        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23cc33cc&ctz=Europe%2FDublin&showDate=1&title=Tattoo%20Dates&mode=WEEK&src=ZW4uaXJpc2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043" style="border-width:0" width="100%" height="500rm" frameborder="0" scrolling="no"></iframe>
+                      </div>
+                    </div>
                     <br>
-                
-                    <p class="formText">Email*</p>
-                    <input type="email" placeholder="Enter your email" required>
-                    <br>
-
-                    <p class="formText">Age*</p>
-                    <input type="text" placeholder="Enter your age" required>
-                    <br>
-
-                    <p class="formText">Description</p>
-                    <textarea placeholder="Please enter where you want to get the tattoo and the size of the tattoo"></textarea>
-
-                    <p class="formText">Upload files of tattoo designs</p>
-                    <input type="file" class="formText">
-                    <input type="submit" value="submit">
-
-                    <p class="formText">* Required</p>
-            </form>
+                    <div class="row">
+                        <div class="col">
+                            <p>Deposit Required: €50 to Secure Your Tattoo Date!</p>
+                            <p>Attention all tattoo enthusiasts!</p>
+                            <p class="justify">To guarantee your desired tattoo appointment, I kindly request a small deposit of just €50. This deposit will secure your spot on my schedule, ensuring that I can dedicate the necessary time and resources to create your perfect tattoo.</p>
+                            <p class="justify">Why a deposit, you may wonder? By providing a deposit, we solidify our commitment to one another. It allows me to prepare and organize all the materials needed for your session. Moreover, it helps prevent any last-minute changes or cancellations, ensuring a smooth and seamless tattoo experience for both of us.</p>
+                        </div>
+                        <div class="col">
+                            <h4>Click to be redirected to my paypal account:</h4>
+                            <a href="https://www.paypal.com" target="_blank">
+                                <img class="paypal" src="images/Paypal.png" alt="PayPal Button" />
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        I confirm that I am 18 years or older.
+                    </label>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button type="submit" class="btn btn-outline-primary">Submit</button>
+                </div>
+              </form>
         </div>
-        <div class="deposit">
-            <span class="deposit-text"><p>Deposits to be paid via</p>
-            <a href="https://www.paypal.com" target="_blank">
-                <img class="paypal" src="images/Paypal.png" alt="PayPal Button" />
-              </a>
-        </div>
+        <br>
     </div>
     <footer class="p-2 text-center position-relative">
         <div class="container">

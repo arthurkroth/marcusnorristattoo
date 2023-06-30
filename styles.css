@@ -163,3 +163,22 @@ footer{
     width: 200px;
 }
 
+form {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: rgb(199,36,177);
+}
+
+.pinkbutton{
+    background-color:#c724b1;
+    color:#c724b1;
+    border-color:#c724b1;
+}
+.justify{
+    text-align: justify;
+}
+
+.paypal{
+    padding-top: 10%;
+    width: 50%;
+}
