@@ -182,3 +182,16 @@ form {
     padding-top: 10%;
     width: 50%;
 }
+
+.navbar-toggler{
+    background-color: rgb(199,36,177);
+}
+
+.caption{
+    color: rgb(199,36,177);
+}
+
+.thumbnail{
+    width: 500px;
+    height: auto;
+}
