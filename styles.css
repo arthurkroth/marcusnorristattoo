@@ -292,3 +292,16 @@ form {
     font-size:13px;
     margin-bottom:0;
   }
+
+  hr{
+    border: 2px solid #c724b1;
+  }
+
+  .appointments {
+    width: 70%;
+    margin: auto;
+  }
+
+ .form-check{
+    padding-left: 17%;
+  }
