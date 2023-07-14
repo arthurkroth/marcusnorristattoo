@@ -364,15 +364,34 @@ nav{
     text-shadow: 1px 1px black; 
 }
 
-@media (max-width:860px) {
+@media (max-width:728px) {
     .pIndex{
-        top: 75%;
+        top: 78%;
+        font-size: 125%;
     }
 
     .pIndex2{
-        top: 82%;
+        top: 85%;
+        font-size: 125%;
     }
     .h1Index{
-        top: 38%;
+        top: 50%;
+        font-size: 7vh;
+    }
+}
+
+@media (max-width:380px) {
+    .pIndex{
+        top: 78%;
+        font-size: 100%;
+    }
+
+    .pIndex2{
+        top: 85%;
+        font-size: 100%;
+    }
+    .h1Index{
+        top: 50%;
+        font-size: 7vh;
     }
 }
