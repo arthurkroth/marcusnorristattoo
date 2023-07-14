@@ -201,16 +201,23 @@ form {
     width: 500px;
     height: auto;
 }
-/* Changing the size of the carousel */ 
-.carousel > .carousel-inner > .carousel-item > img{
-    height:800px;
+
+.carousel-item{
+    height: auto;
+    width: 70%;
+    padding-left: 30%;
 }
+
 
 .pink {
     color: rgb(199,36,177);
     font-family: 'DM Sans', sans-serif;
     font-family: 'Miltonian Tattoo', cursive;
     font-size: 60px;
+}
+
+.col-md-4{
+    padding-left: 20%;
 }
 
 .footer-dark {
