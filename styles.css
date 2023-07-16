@@ -163,7 +163,6 @@ li {
 form {
   color: rgb(199, 36, 177);
 }
-
 .pinkbutton {
   background-color: #c724b1;
   color: #c724b1;
@@ -330,6 +329,9 @@ hr {
 
 .form-check {
   padding-left: 3%;
+}
+.form-check-label {
+  padding-left: 3px;
 }
 
 nav {
