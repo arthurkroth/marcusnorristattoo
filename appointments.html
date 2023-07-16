@@ -1,153 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Xompatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Xompatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebDev CA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Miltonian+Tattoo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Miltonian+Tattoo&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-sm">
-        <div class="container">
-            <a href="index.html" class="navbar-brand"><img src="images/Final Logo.png" alt="logo" class="logo"></a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="gallery.html" class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="flashs.html" class="nav-link">Flashs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="appointments.html" class="nav-link">Appointments</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="guests.html" class="nav-link">Guests</a>
-                    </li>
-                </ul>                                
-            </div>
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="images/Final Logo.png" alt="logo" class="logo" /></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="flashs.html" class="nav-link">Flashs</a>
+            </li>
+            <li class="nav-item">
+              <a href="appointments.html" class="nav-link">Appointments</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="guests.html" class="nav-link">Guests</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <hr>
+    <hr />
+    <br />
     <h1 class="text-center pink">Appointments</h1>
+    <br />
     <div class="wrapper">
-        <div class="form">
-            <form class="row g-3 appointments">
-                <div class="col-md-6">
-                  <label for="inputName4" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="inputName4">
+      <div class="form">
+        <form class="row g-3 appointments needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="inputName4" class="form-label">Name*</label>
+            <!-- Validated using HTML -->
+            <input type="text" class="form-control" id="inputName4" required />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email*</label>
+            <!-- Validated using HTML -->
+            <input type="email" class="form-control" id="inputEmail4" required />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid email.</div>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address*</label>
+            <!-- Validated using HTML -->
+            <input type="text" class="form-control" id="inputAddress" placeholder="74 Dorset Street Lower" required />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid address.</div>
+          </div>
+          <div class="col-7">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <!-- not required -->
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+          </div>
+          <div class="col-5">
+            <label for="inputPhone" class="form-label">Phone*</label>
+            <!-- Validated using JavaScript -->
+            <input
+              type="text"
+              id="inputPhone"
+              class="form-control"
+              id="inputPhone"
+              placeholder="083 999 9999"
+              maxlength="10"
+              required />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid phone number(0834539281).</div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City*</label>
+            <!-- Validated using HTML -->
+            <input type="text" class="form-control" id="inputCity" required />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid city.</div>
+          </div>
+          <div class="col-md-3">
+            <label for="inputCounty" class="form-label">County*</label>
+            <!-- Validated using HTML -->
+            <input type="text" class="form-control" id="inputCounty" required />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid county.</div>
+          </div>
+          <div class="col-md-3">
+            <label for="inputCode" class="form-label">Eircode*</label>
+            <!-- Validated using HTML -->
+            <input type="text" class="form-control" id="inputCode" maxlength="8" required />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid Eircode(D09 F797).</div>
+          </div>
+          <div class="col-12">
+            <label for="exampleFormControlTextarea1" class="form-label">Tattoo Description*</label>
+            <!-- Validated using HTML -->
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Please enter where you want to get the tattoo and the size of the tattoo"
+              required></textarea>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">You need to provide at least a short description!</div>
+          </div>
+          <div class="col-6">
+            <label for="formFileMultiple" class="form-label">Upload files of tattoo design</label>
+            <!-- Only shows .jpeg,.jpg,.png on user's file explorer and the user can upload more than one file. -->
+            <input class="form-control" type="file" id="formFileMultiple" accept=".jpeg,.jpg,.png" multiple />
+          </div>
+          <div class="col-6">
+            <label for="formFileMultiple" class="form-label">Body Part you want your tattoo*</label>
+            <!-- Validated using HTML -->
+            <select class="form-select" aria-label="Default select example" required>
+              <option selected></option>
+              <optgroup label="Small">
+                <option value="wrist">Wrist</option>
+                <option value="backOfThePalm">Back of the palm</option>
+                <option value="ankle">Ankle</option>
+                <option value="BehindTheEar">Behind the ear</option>
+                <option value="AboveTheElbow">Above the elbow</option>
+                <option value="knee">Knee</option>
+                <option value="topOfTheFoot">Top of the foot</option>
+                <option value="fingers">Fingers</option>
+              </optgroup>
+              <optgroup label="Medium">
+                <option value="forearm">Forearm</option>
+                <option value="calves">Calves</option>
+                <option value="shins">Shins</option>
+                <option value="neck">Neck</option>
+                <option value="shoulder">Shoulder</option>
+                <option value="sternum">Sternum</option>
+                <option value="innerThigh">Inner thigh</option>
+                <option value="shoulderBlade">Shoulder blade</option>
+                <option value="upperArm">Upper arm</option>
+              </optgroup>
+              <optgroup label="Large">
+                <option value="upperThigh">Upper thigh</option>
+                <option value="upperBack">Upper back</option>
+                <option value="lowerBack">Lower back</option>
+                <option value="chest">Chest</option>
+                <option value="stomach">Stomach</option>
+                <option value="hip">Hip</option>
+                <option value="ribs">Ribs</option>
+              </optgroup>
+            </select>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">You need to select an option!</div>
+          </div>
+          <br />
+          <div class="col-8">
+            <label for="">How did you hear about me?</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="appointmentRadio"
+                id="searchEngines"
+                value="searchEngines" />
+              <label class="form-check-label" for="searchEngines">Search engine(Google, Yahoo, etc.)</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="appointmentRadio"
+                id="friendRecomendation"
+                value="friendRecomendation"
+                checked />
+              <label class="form-check-label" for="friendRecomendation">Recommended by a friend</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="appointmentRadio"
+                id="socialMedia"
+                value="socialMedia" />
+              <label class="form-check-label" for="socialMedia">Social Media</label>
+            </div>
+          </div>
+          <div class="col-4">
+            <br /><br /><br />
+            <p style="float: right">*Required fields!</p>
+          </div>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <br /><br />
+                <h3 class="form-check-label">Check my calendar!</h3>
+                <br />
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23cc33cc&ctz=Europe%2FDublin&showDate=1&title=Tattoo%20Dates&mode=WEEK&src=ZW4uaXJpc2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043"
+                  style="border-width: 0"
+                  width="100%"
+                  height="500rm"
+                  frameborder="0"
+                  scrolling="no"></iframe>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col">
+                <p>Deposit Required: €50 to Secure Your Tattoo Date!</p>
+                <p>Attention all tattoo enthusiasts!</p>
+                <p class="justify">
+                  To guarantee your desired tattoo appointment, I kindly request a small deposit of just €50. This
+                  deposit will secure your spot on my schedule, ensuring that I can dedicate the necessary time and
+                  resources to create your perfect tattoo.
+                </p>
+                <p class="justify">
+                  Why a deposit, you may wonder? By providing a deposit, we solidify our commitment to one another. It
+                  allows me to prepare and organize all the materials needed for your session. Moreover, it helps
+                  prevent any last-minute changes or cancellations, ensuring a smooth and seamless tattoo experience for
+                  both of us.
+                </p>
+                <div class="form-check">
+                  <input class="form-check-input confirm" type="checkbox" id="gridCheck" required />
+                  <label class="form-check-label" for="gridCheck"> I confirm that I am 18 years or older. </label>
+                  <div class="invalid-feedback">You must agree before submitting.</div>
                 </div>
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="74 Dorset Street Lower">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-4">
-                  <label for="inputCounty" class="form-label">County</label>
-                  <input type="text" class="form-control" id="inputCounty">
-                </div>
-                <div class="col-md-2">
-                  <label for="inputCode" class="form-label">Eircode</label>
-                  <input type="text" class="form-control" id="inputCode">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Tattoo Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please enter where you want to get the tattoo and the size of the tattoo"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="formFileMultiple" class="form-label">Upload files of tattoo design</label>
-                    <input class="form-control" type="file" id="formFileMultiple" multiple>
-                </div>
-                <div class="container text-center">
-                    <div class="row">
-                      <div class="col">
-                        <p class="form-check-label">Check my calendar!</p>
-                        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23cc33cc&ctz=Europe%2FDublin&showDate=1&title=Tattoo%20Dates&mode=WEEK&src=ZW4uaXJpc2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043" style="border-width:0" width="100%" height="500rm" frameborder="0" scrolling="no"></iframe>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col">
-                            <p>Deposit Required: €50 to Secure Your Tattoo Date!</p>
-                            <p>Attention all tattoo enthusiasts!</p>
-                            <p class="justify">To guarantee your desired tattoo appointment, I kindly request a small deposit of just €50. This deposit will secure your spot on my schedule, ensuring that I can dedicate the necessary time and resources to create your perfect tattoo.</p>
-                            <p class="justify">Why a deposit, you may wonder? By providing a deposit, we solidify our commitment to one another. It allows me to prepare and organize all the materials needed for your session. Moreover, it helps prevent any last-minute changes or cancellations, ensuring a smooth and seamless tattoo experience for both of us.</p>
-                        </div>
-                        <div class="col">
-                            <h4>Click to be redirected to my paypal account:</h4>
-                            <a href="https://www.paypal.com" target="_blank">
-                                <img class="paypal" src="images/Paypal.png" alt="PayPal Button" />
-                            </a>
-                        </div>
-                    </div>
-                  </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input confirm" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        I confirm that I am 18 years or older.
-                    </label>
-                  </div>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                  <button type="submit" class="btn btn-outline-primary">Submit</button>
-                </div>
-              </form>
-        </div>
-        <br>
+              </div>
+              <div class="col">
+                <h4>Click to be redirected to my paypal account:</h4>
+                <a href="https://www.paypal.com" target="_blank">
+                  <img class="paypal" src="images/Paypal.png" alt="PayPal Button" />
+                </a>
+                <br /><br /><br /><br />
+                <p>*Please bring your €50 tranfer receipt on your tattoo apointment</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <br /><br />
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+            <br />
+          </div>
+        </form>
+      </div>
+      <br />
     </div>
+
     <!--FOOTER-->
     <div class="footer-dark">
       <footer>
-          <div class="container">
-              <div class="row">
-                  <div class="col item social">
-                      <a href="https://www.facebook.com/p/Marcus-Norris-tattoo-100063548830030/" target="_blank">
-                      <i class="icon ion-social-facebook"></i></a>
-                      <a href="https://www.tiktok.com/@mr_inkandiron" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
-                      <a href="https://www.instagram.com/mr_inkandiron/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><i class="icon ion-social-instagram"></i></a>
-                  </div>
-              </div>
-              <p class="copyright">All rights reserved Group 3© 2023</p>
+        <div class="container">
+          <div class="row">
+            <div class="col item social">
+              <a href="https://www.facebook.com/p/Marcus-Norris-tattoo-100063548830030/" target="_blank">
+                <i class="icon ion-social-facebook"></i
+              ></a>
+              <a href="https://www.tiktok.com/@mr_inkandiron" target="_blank"
+                ><ion-icon name="logo-tiktok"></ion-icon
+              ></a>
+              <a href="https://www.instagram.com/mr_inkandiron/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"
+                ><i class="icon ion-social-instagram"></i
+              ></a>
+            </div>
           </div>
+          <p class="copyright">All rights reserved Group 3© 2023</p>
+        </div>
       </footer>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="script.js"></script>
-
-
-</body>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
