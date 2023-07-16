@@ -211,8 +211,14 @@ form {
 .pink {
   color: rgb(199, 36, 177);
   font-family: "DM Sans", sans-serif;
-  font-family: "Miltonian Tattoo", cursive;
-  font-size: 60px;
+  font-family: "Rancho", cursive;
+  font-size: 12vh;
+}
+.pink2 {
+  color: rgb(199, 36, 177);
+  font-family: "DM Sans", sans-serif;
+  font-family: "Rancho", cursive;
+  font-size: 8vh;
 }
 
 .col-md-4 {
@@ -348,15 +354,18 @@ nav {
   border: 1px solid #c724b1;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+.attention {
+  font-size: larger;
+}
 .h1Index {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 5%;
-  font-size: 10vh;
+  font-size: 15vh;
   color: #c724b19c;
-  text-shadow: 3px 3px black;
+  text-shadow: 3px 3px rgb(85, 83, 83);
   font-family: "DM Sans", sans-serif;
-  font-family: "Miltonian Tattoo", cursive;
+  font-family: "Rancho", cursive;
 }
 .pIndex {
   position: absolute;
