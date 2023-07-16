@@ -1,9 +1,22 @@
-/*function changeIndex(){
-    document.getElementById("imageIndex").src="images/Marcus Norris.jpg";
-}*/
+// GLOBAL VARIABLES - ARTHUR KROTH
 
-var inputPhone = document.getElementById("inputPhone").value;
+var inputPhone = document.getElementById("inputPhone");
 
+// CHECK IF THE INPUTPHONE FIELD IS RECEIVING A NUMBER AND MINIMUM 10 NUMBERS - ARTHUR KROTH
+inputPhone.addEventListener("input", function (event) {
+  var phoneNumber = event.target.value;
+  // Use regular expression to check if the input contains only numbers
+  var isValidPhoneNumber = /^\d+$/.test(phoneNumber);
+  var isValidLength = phoneNumber.length >= 10;
+
+  if (!isValidPhoneNumber || !isValidLength) {
+    inputPhone.setCustomValidity("Please enter a valid phone number (e.g., 0830101010) with a minimum of 10 digits.");
+  } else {
+    inputPhone.setCustomValidity(""); // Clear the custom error message
+  }
+});
+
+//  MODIFYING THE DOM OF THE INDEX PAGE - ARTHUR KROTH
 function changeIndex() {
   var image = document.getElementById("imageIndex");
   var imagePath = image.src;
@@ -17,23 +30,7 @@ function changeIndex() {
   }
 }
 
-// // Function to check if a given value is a number
-// function isNumber(value) {
-//   return /^-?\d+\.?\d*$/.test(value);
-// }
-
-// // Function to handle the form submission
-
-// function handleSubmit(event) {
-//   event.preventDefault(); // Prevent the form from submitting initially
-
-//   if (isNumber(inputPhone)) {
-//     event.target.submit();
-//   } else {
-//     alert("Not a valid phone number");
-//   }
-// }
-
+// BOOTSTRAP SCRIPT FOR FORM VALIDATIONS WITH MANUAL/PERSONAL MODIFICATIONS TO WORK ON THIS SPECIFIC FORM - ARTHUR KROTH
 // JavaScript for disabling form submissions if there are invalid fields
 (function () {
   "use strict";
@@ -49,6 +46,8 @@ function changeIndex() {
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
+          //Next command is to scroll the page to the field if the condition is not met.
+          window.scrollTo(300, 300);
         }
 
         form.classList.add("was-validated");
