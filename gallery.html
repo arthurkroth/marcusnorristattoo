@@ -124,6 +124,7 @@
       </div>
     </div>
   </div>
+  <h4 id="galleryText" class="text-center pink"></h4>
 </div>
 <!--Carosel slide buttons-->
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -163,6 +164,20 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    //Carousel text
+    var carouselText = [
+      "Horror Themed Portraits.","Celebrity Portraits.", "Abstract Realism sleeves.", "Some personal faourite sleeves.", "All sleeves take minimum of 2 days to comeplete.", "I love to incorporate animals into my designs.", "I don't do the same design twice so all designs will be 100& unique.", "My going rate for 2 day sleeves is €800.", "Egyptian Themed.", "I also do smaller designs that can do done in 1 day.", "Black sleeves with red going through it is my favourite style to do.", "I can design a tattoo like this to suit your interests.", "A chest piece I done, I would love to do more like this."];
+    var carouselTextIndex = 0;
+    var carouselTextElement = document.getElementById("galleryText");
+    carouselTextElement.innerHTML = carouselText[carouselTextIndex];
+    //Carousel text change
+    $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+      carouselTextIndex = e.to;
+      carouselTextElement.innerHTML = carouselText[carouselTextIndex];
+    })
+    
+  </script>
 
 </body>
 </html>
