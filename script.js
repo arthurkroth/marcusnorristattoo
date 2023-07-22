@@ -56,3 +56,30 @@ function changeIndex() {
     );
   });
 })();
+
+ /* this script will hide images that are not selected and the image that is selected will be displayed in a full-screen overlay along with the text */
+ function showSelected(imageName, priceText) {
+  var overlay = document.getElementById("overlay");
+  var mainContent = document.getElementById("mainContent");
+
+  mainContent.style.display = "none";
+
+  overlay.style.display = "block";
+  var selectedImg = document.getElementById("selectedImage");
+  selectedImg.src = "/images/" + imageName;
+  var selectedPrice = document.getElementById("selectedPrice");
+  selectedPrice.textContent = priceText;
+}
+
+function hideOverlay() {
+  var overlay = document.getElementById("overlay");
+  var mainContent = document.getElementById("mainContent");
+
+  overlay.style.display = "none";
+  mainContent.style.display = "block";
+}
+
+var overlay = document.getElementById("overlay");
+overlay.addEventListener("click", function () {
+  hideOverlay();
+});
