@@ -257,12 +257,13 @@ height: auto;
   font-size: 8vh;
 }
 
-.col-md-4 {
+.col-md-6 {
   position: relative;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .price {
   color: rgb(199, 36, 177);
