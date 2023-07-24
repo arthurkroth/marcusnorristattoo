@@ -57,7 +57,7 @@ function changeIndex() {
   });
 })();
 
- /* this script will hide images that are not selected and the image that is selected will be displayed in a full-screen overlay along with the text */
+/* this script will hide images that are not selected and the image that is selected will be displayed in a full-screen overlay along with the text */
  function showSelected(imageName, priceText) {
   var overlay = document.getElementById("overlay");
   var mainContent = document.getElementById("mainContent");
@@ -66,7 +66,7 @@ function changeIndex() {
 
   overlay.style.display = "block";
   var selectedImg = document.getElementById("selectedImage");
-  selectedImg.src = "/images/" + imageName;
+  selectedImg.src = "images/" + imageName;
   var selectedPrice = document.getElementById("selectedPrice");
   selectedPrice.textContent = priceText;
 }
