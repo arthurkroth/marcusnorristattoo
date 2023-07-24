@@ -59,10 +59,12 @@
         </div>
     </div>
 </nav>
+<hr>
+<br>
 
 <!--Main Body of the Page-->
-<h1 class="text-center pink">Gallery</h1>
-<div class="galleryWrapper">
+<h1 class="text-center pink mt-md-3">Gallery</h1>
+<div class="container galleryWrapper">
   <!--Carousel-->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -175,9 +177,7 @@
     $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
       carouselTextIndex = e.to;
       carouselTextElement.innerHTML = carouselText[carouselTextIndex];
-    })
-    
+    }) 
   </script>
-
 </body>
 </html>
