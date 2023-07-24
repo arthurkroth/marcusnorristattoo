@@ -200,11 +200,13 @@ form {
 width: 600px;
 height: auto;
 position: relative;
+margin-bottom: 2%;
 }
 
 .thumbnail img {
 width: 100%;
 height: auto;
+margin-bottom: 2%;
 }
 
 #selectedPrice{
