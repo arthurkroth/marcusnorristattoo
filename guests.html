@@ -52,6 +52,7 @@
     </nav>
 
     <hr />
+    <br />
     
     <h1 class="text-center pink">Guests</h1>
     
@@ -63,6 +64,7 @@
                     <p>New York Tattoo Convention</p>
                     <p>Coney Island</p>
                     <p>11 July - 14 July</p>
+                    <a><button type="button" class="btn-book">Fully booked</button></a>
                 </div>
             </div>
 
@@ -72,6 +74,7 @@
                     <p>The Big London Tattoo Show</p>
                     <p>Excel London</p>
                     <p>26 August - 27 August</p>
+                    <a><button type="button" class="btn-book">Fully booked</button></a>
                 </div>
             </div>
 
@@ -81,10 +84,68 @@
                     <p>Dublin Tattoo Convention</p>
                     <p>RDS Dublin</p>
                     <p>29 September - 1st October</p>
+                    <a href="appointments.html"><button type="button" class="btn-book">Book Now</button></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <hr/>
+    <br/>
+
+    <h1 class="text-center pink">Guessing Game</h1><br><br>
+    <div class="container-guess">
+        <h3 class="pink3">I am thinking of a number between 1-100.</h3>
+        <h3 class="pink3">Can you guess it?</h3>
+ 
+        <input type="text" placeholder="Num" id="guess"><br><br>
+        <button onclick="play()" id="my_btn" class="btn-guess">GUESS</button>
+ 
+        <p id="message1" class="pink3">No. Of Guesses: 0</p>
+        <p id="message2" class="pink3">Guessed Numbers are: None</p>
+        <p id="message3" class="pink3"></p>
+    </div>
+
+    <script>
+        var msg1 = document.getElementById("message1");
+        var msg2 = document.getElementById("message2");
+        var msg3 = document.getElementById("message3");
+
+        var answer = Math.floor(Math.random()*100) + 1;
+        var no_of_guesses = 0;
+        var guessed_nums = [];
+
+     
+        function play(){
+            var user_guess = document.getElementById("guess").value;
+            if(user_guess < 1 || user_guess > 100){
+                alert("Please enter a number between 1 and 100.");
+            }
+            else{
+                guessed_nums.push(user_guess);
+                no_of_guesses+= 1;
+
+            if(user_guess < answer){
+                msg1.textContent = "Your guess is too low.";
+                msg2.textContent = "No. of guesses: " + no_of_guesses;
+                msg3.textContent = "Guessed numbers are: " +
+                guessed_nums;
+            }
+            else if(user_guess > answer){
+                msg1.textContent = "Your guess is too high.";
+                msg2.textContent = "No. of guesses: " + no_of_guesses;
+                msg3.textContent = "Guessed numbers are: " +
+                guessed_nums;
+            }
+            else if(user_guess == answer){
+                msg1.textContent = "You Win!! The number was: " + answer;
+                msg2.textContent = "You have won a 50 euro voucher in your next tattoo! "
+                msg3.textContent = "Print this page to secure your voucher!";
+                document.getElementById("my_btn").disabled = true;
+            }
+        }
+    }
+    </script>
     
     <!--FOOTER-->
     <div class="footer-dark">
