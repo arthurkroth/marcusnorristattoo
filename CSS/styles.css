@@ -38,7 +38,7 @@ li {
   width: 100%;
 }
 .header {
-  background-image: url(images/banenr4.jpg);
+  background-image: url(../images/banenr4.jpg);
   height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
