@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-sm">
       <div class="container">
         <a href="index.html" class="navbar-brand"><img src="images/Final Logo.png" alt="logo" class="logo" /></a>
@@ -56,70 +57,64 @@
         </div>
       </div>
     </nav>
+
     <hr />
     <br />
+    <!--Title-->
     <h1 class="text-center pink">Appointments</h1>
     <br />
+    <!--Main DIV with form-->
     <div class="wrapper">
       <div class="form">
         <form method="post" class="row g-3 appointments needs-validation" novalidate>
           <div class="col-md-6">
             <label for="inputName4" class="form-label">Name*</label>
-            <!-- Validated using HTML -->
             <input type="text" class="form-control" id="inputName4" required />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please enter your name.</div>
           </div>
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email*</label>
-            <!-- Validated using HTML -->
             <input type="email" class="form-control" id="inputEmail4" required />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please provide a valid email.</div>
           </div>
           <div class="col-12">
             <label for="inputAddress" class="form-label">Address*</label>
-            <!-- Validated using HTML -->
             <input type="text" class="form-control" id="inputAddress" placeholder="74 Dorset Street Lower" required />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please provide a valid address.</div>
           </div>
           <div class="col-7">
             <label for="inputAddress2" class="form-label">Address 2</label>
-            <!-- not required -->
             <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
           </div>
           <div class="col-5">
             <label for="inputPhone" class="form-label">Phone*</label>
-            <!-- Validated using JavaScript -->
             <input type="text" id="inputPhone" class="form-control" id="inputPhone" placeholder="0839999999" maxlength="10" required />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please provide a valid phone number(0830101010).</div>
           </div>
           <div class="col-md-6">
             <label for="inputCity" class="form-label">City*</label>
-            <!-- Validated using HTML -->
             <input type="text" class="form-control" id="inputCity" required />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please provide a valid city.</div>
           </div>
           <div class="col-md-3">
             <label for="inputCounty" class="form-label">County*</label>
-            <!-- Validated using HTML -->
             <input type="text" class="form-control" id="inputCounty" required />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please provide a valid county.</div>
           </div>
           <div class="col-md-3">
             <label for="inputCode" class="form-label">Eircode*</label>
-            <!-- Validated using HTML -->
             <input type="text" class="form-control" id="inputCode" maxlength="8" required />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please provide a valid Eircode(D01 A1A1).</div>
           </div>
           <div class="col-12">
             <label for="exampleFormControlTextarea1" class="form-label">Tattoo Description*</label>
-            <!-- Validated using HTML -->
             <textarea
               class="form-control"
               id="exampleFormControlTextarea1"
@@ -136,7 +131,6 @@
           </div>
           <div class="col-6">
             <label for="formFileMultiple" class="form-label">Body Part you want your tattoo*</label>
-            <!-- Validated using HTML -->
             <select class="form-select" aria-label="Default select example" required>
               <option selected></option>
               <optgroup label="Small">
@@ -246,7 +240,7 @@
           <br />
           <div class="d-grid gap-2 col-6 mx-auto">
             <br /><br />
-            <button type="submit" action="mailto:kroth.sc@gmail.com" class="btn btn-outline-primary">Submit</button>
+            <button type="submit" action="mailto:test.email@gmail.com" class="btn btn-outline-primary">Submit</button>
             <br />
           </div>
         </form>
@@ -254,7 +248,7 @@
       <br />
     </div>
 
-    <!--FOOTER-->
+    <!--Footer-->
     <div class="footer-dark">
       <footer>
         <div class="container">
@@ -269,6 +263,7 @@
         </div>
       </footer>
     </div>
+    <!--Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
