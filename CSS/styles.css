@@ -456,19 +456,19 @@ nav {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 375px) {
   .pIndex {
-    top: 78%;
+    top: 75%;
     font-size: 100%;
   }
 
   .pIndex2 {
-    top: 85%;
+    top: 83%;
     font-size: 100%;
   }
   .h1Index {
     top: 50%;
-    font-size: 7vh;
+    font-size: 10vh;
   }
 }
 
@@ -662,4 +662,27 @@ nav {
   background: #b96caf;
   border: 1px solid #c724b1;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%) translateX(-50%);
+  height: 50px !important;
+  max-height: 10vh;
+  padding: 10px;
+}
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translateY(-50%) translateX(-50%);
+  height: 50px !important;
+  max-height: 10vh;
+  padding: 10px;
 }
