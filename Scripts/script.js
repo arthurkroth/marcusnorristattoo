@@ -22,11 +22,11 @@ function changeIndex() {
   var imagePath = image.src;
 
   if (imagePath.endsWith("bio1.jpg")) {
-    image.src = "images/bio2.jpg";
+    image.src = "../images/bio2.jpg";
   } else if (imagePath.endsWith("bio2.jpg")) {
-    image.src = "images/bio3.jpg";
+    image.src = "../images/bio3.jpg";
   } else {
-    image.src = "images/bio1.jpg";
+    image.src = "../images/bio1.jpg";
   }
 }
 
@@ -58,7 +58,7 @@ function changeIndex() {
 })();
 
 /* this script will hide images that are not selected and the image that is selected will be displayed in a full-screen overlay along with the text */
- function showSelected(imageName, priceText) {
+function showSelected(imageName, priceText) {
   var overlay = document.getElementById("overlay");
   var mainContent = document.getElementById("mainContent");
 
