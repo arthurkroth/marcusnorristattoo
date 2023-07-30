@@ -57,6 +57,10 @@ function changeIndex() {
   });
 })();
 
+function ChangeGallery() {
+  document.getElementById("");
+}
+
 /* this script will hide images that are not selected and the image that is selected will be displayed in a full-screen overlay along with the text */
 function showSelected(imageName, priceText) {
   var overlay = document.getElementById("overlay");
