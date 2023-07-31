@@ -197,14 +197,14 @@ form {
 }
 
 .thumbnail {
-  width: 600px;
+  width: auto;
   height: auto;
   position: relative;
   margin-bottom: 2%;
 }
 
 .thumbnail img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   margin-bottom: 2%;
 }
@@ -672,7 +672,7 @@ nav {
 
 .carousel-control-prev {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 5%;
   transform: translateY(-50%) translateX(-50%);
   height: 50px !important;
@@ -681,7 +681,7 @@ nav {
 }
 .carousel-control-next {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 95%;
   transform: translateY(-50%) translateX(-50%);
   height: 50px !important;
