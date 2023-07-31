@@ -94,8 +94,8 @@
     <h1 class="text-center pink">Guessing Game</h1>
     <br /><br />
     <div class="container-guess">
-      <h3 class="pink3">I am thinking of a number between 1-100.</h3>
-      <h3 class="pink3">Can you guess it?</h3>
+      <h3 class="pink3">I am thinking of a number between 1-25.</h3>
+      <h3 class="pink3">You have 3 chances. Can you guess it?</h3>
 
       <input type="text" placeholder="Num" id="guess" /><br /><br />
       <button onclick="play()" id="my_btn" class="btn-guess">GUESS</button>
@@ -120,20 +120,29 @@
         </div>
       </footer>
     </div>
-    <script>
+   <script>
       var msg1 = document.getElementById("message1");
       var msg2 = document.getElementById("message2");
       var msg3 = document.getElementById("message3");
 
-      var answer = Math.floor(Math.random() * 100) + 1;
+      var answer = Math.floor(Math.random() * 25) + 1;
       var no_of_guesses = 0;
       var guessed_nums = [];
 
       function play() {
+        if (no_of_guesses >= 2) {
+          msg1.textContent = "Sorry, you have reached the maximum number of guesses.";
+          msg2.textContent = "The number was: " + answer;
+          msg3.textContent = "Better luck next time!";
+          document.getElementById("my_btn").disabled = true;
+          return;
+        }
+
         var user_guess = document.getElementById("guess").value;
-        if (user_guess < 1 || user_guess > 100) {
-          alert("Please enter a number between 1 and 100.");
-        } else {
+        if (user_guess < 1 || user_guess > 25) {
+          alert("Please enter a number between 1 and 25.");
+        }
+        else {
           guessed_nums.push(user_guess);
           no_of_guesses += 1;
 
@@ -141,11 +150,13 @@
             msg1.textContent = "Your guess is too low.";
             msg2.textContent = "No. of guesses: " + no_of_guesses;
             msg3.textContent = "Guessed numbers are: " + guessed_nums;
-          } else if (user_guess > answer) {
+          }
+          else if (user_guess > answer) {
             msg1.textContent = "Your guess is too high.";
             msg2.textContent = "No. of guesses: " + no_of_guesses;
             msg3.textContent = "Guessed numbers are: " + guessed_nums;
-          } else if (user_guess == answer) {
+          }
+          else if (user_guess == answer) {
             msg1.textContent = "You Win!! The number was: " + answer;
             msg2.textContent = "You have won a 50 euro voucher in your next tattoo! ";
             msg3.textContent = "Print this page to secure your voucher!";
