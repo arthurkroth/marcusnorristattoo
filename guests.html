@@ -130,7 +130,7 @@
       var guessed_nums = [];
 
       function play() {
-        if (no_of_guesses >= 2) {
+        if (no_of_guesses === 3) {
           msg1.textContent = "Sorry, you have reached the maximum number of guesses.";
           msg2.textContent = "The number was: " + answer;
           msg3.textContent = "Better luck next time!";
