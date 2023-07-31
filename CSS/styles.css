@@ -569,6 +569,7 @@ nav {
 }
 
 .review .review-slider .box {
+  height: auto;
   border: 0px solid red;
   border-radius: 0.5rem;
   text-align: center;
